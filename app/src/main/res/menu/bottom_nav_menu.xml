@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_shop"
+        android:icon="@drawable/store_layout"
+        android:title="Shop" />
+
+    <item
+        android:id="@+id/nav_loyalty"
+        android:icon="@drawable/baseline_stars_24"
+        android:title="Loyalty" />
+
+    <item
+        android:id="@+id/nav_price"
+        android:icon="@drawable/price"
+        android:title="Pricing Plans" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/more"
+        android:title="More" />
+
+</menu>

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!-- Top Image and Logo Overlay -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_21"
+                android:scaleType="centerCrop" />
+
+            <!-- Logo Overlay -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="-120dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/logo_main"/>
+
+        </FrameLayout>
+
+        <!-- CardView with Title, Subtitle, and Buttons -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_marginTop="-30dp"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="#F7B8B5">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/logo_main"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:padding="16dp">
+
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Touch of Gold"
+                    android:textColor="#4A4A4A"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Subtitle -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="“Gold never looks Old”"
+                    android:textColor="#4A4A4A"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Members  |  General Info"
+                    android:textColor="#4A4A4A"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/greaterthan"
+                    android:layout_marginTop="-20dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="175dp"/>
+
+
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Invite"
+                        android:textStyle="bold"
+                        android:textColor="#4A4A4A"
+                        android:background="@drawable/invite"
+                        android:drawableLeft="@drawable/invite_button1"
+                        android:drawableTint="@color/Skin"
+                        android:clickable="true"
+                        android:paddingEnd="60dp"/>
+
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Buy Now"
+                        android:textStyle="bold"
+                        android:textColor="#4A4A4A"
+                        android:clickable="true"
+                        android:backgroundTint="@color/Skin"
+                        android:layout_marginStart="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/allproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:layout_margin="16dp"
+                android:textColor="#F7B8B5" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/viewallprod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:layout_margin="16dp"
+                android:textColor="#F7B8B5" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productrecview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pricing plans"
+                android:textStyle="bold"
+                android:textColor="#4A4A4A"
+                android:layout_marginStart="10dp"
+                android:gravity="start" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/precview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:verticalSpacing="8dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/white">
+
+
+
+            <!-- Get in Touch Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <!-- Get in Touch Text -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/where_elega"
+                        android:layout_width="168dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/where_elega"
+                        android:textAppearance="@style/where_elega"
+                        />
+
+                    <View
+                        android:id="@+id/rectangle_1"
+                        android:layout_width="85dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/rectangle_1"/>
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="60dp"
+                        android:layout_height="19dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/message"
+                        android:textColor="#4A4A4A"
+                        android:layout_marginTop="-27dp"
+                        android:layout_marginRight="12dp"
+                        android:textAppearance="@style/message"
+                        android:layout_gravity="right"
+                        android:gravity="top"/>
+
+
+
+                    <TextView
+                        android:id="@+id/get_in_touc"
+                        android:layout_width="90dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/get_in_touch"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/get_in_touch"
+                        android:gravity="top"
+                        />
+
+                    <TextView
+                        android:id="@+id/my_site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Site"
+                        android:textColor="#4A4A4A"
+                        android:textSize="13sp" />
+
+
+
+                    <View
+                        android:id="@+id/vector_1"
+                        android:layout_width="472dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/vector_1"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!-- Website Link Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <!-- Website Link -->
+
+                    <TextView
+                        android:id="@+id/https_sonin"
+                        android:layout_width="291dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/https_sonin"
+                        android:textAppearance="@style/https_sonin"
+                        android:textStyle="bold"
+                        android:gravity="top"
+                        />
+
+                    <TextView
+                        android:id="@+id/homepage_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Homepage"
+                        android:textColor="#4A4A4A"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:id="@+id/vector_2"
+                        android:layout_width="476dp"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/vector_1"
+                        android:layout_marginTop="3dp"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!-- Location Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <!-- Location Text -->
+                    <TextView
+                        android:id="@+id/sanand_guja"
+                        android:layout_width="205dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:textStyle="bold"
+                        android:text="@string/sanand_guja"
+                        android:textAppearance="@style/sanand_guja"
+                        android:gravity="top"
+                        />
+
+
+                    <!-- Location Text (Location Description) -->
+                    <TextView
+                        android:id="@+id/location_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textColor="#4A4A4A"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- Location Icon -->
+                <ImageView
+                    android:id="@+id/location_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:src="@drawable/location"
+                    android:contentDescription="Location Icon" />
+
+
+            </LinearLayout>
+
+
+            <!-- Social Links Section -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/social_link"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/social_link"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/social_link"
+                    android:gravity="top"
+                    />
+
+                <ImageView
+                    android:id="@+id/instagram"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-60dp"
+                    android:clickable="true"
+                    android:src="@drawable/insta_logo"
+                    android:contentDescription="Instagram Icon"/>
+
+                <!-- Facebook -->
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/facebook_logo"
+                    android:contentDescription="Facebook Icon" />
+
+                <!-- X (formerly Twitter) -->
+                <ImageView
+                    android:id="@+id/x"
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:layout_marginLeft="-5dp"
+                    android:src="@drawable/x_logo"
+                    android:contentDescription="X Icon" />
+
+                <!-- YouTube -->
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/youtube_logo"
+                    android:contentDescription="YouTube Icon" />
+
+                <!-- TikTok -->
+                <ImageView
+                    android:id="@+id/tiktok"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tiktok_logo"
+                    android:contentDescription="TikTok Icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

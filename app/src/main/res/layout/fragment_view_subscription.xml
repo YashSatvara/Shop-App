@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/validityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validity"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/payment2"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:text="Payment"
+        android:layout_marginHorizontal="28dp"
+        android:backgroundTint="@color/Skin"
+        android:textColor="#4A4A4A"
+        android:textStyle="bold"
+        android:onClick="onNextButtonClick" />
+
+</LinearLayout>

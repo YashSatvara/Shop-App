@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item
+        android:id="@+id/message1"
+        android:title="message"
+        app:showAsAction="always"
+        android:icon="@drawable/message"/>
+
+
+    <item
+        android:id="@+id/notification"
+        android:title="notification"
+        app:showAsAction="always"
+        android:icon="@drawable/notification"/>
+
+
+    <item
+        android:id="@+id/cart"
+        android:title="cart"
+        app:showAsAction="always"
+        android:icon="@drawable/cart"/>
+
+
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".first">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:background="@drawable/first"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4A4A4A"
+        android:layout_marginTop="-80dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="italic"
+        android:textSize="22dp"
+        android:text="Elegant ring, earing, bracelet and\nneckless, with accurate designs just\nthe way  you wanted."
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="#4A4A4A"
+            android:layout_marginTop="250dp"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:text="Designed By Web Wizard"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:textColor="#4A4A4A"
+        android:layout_marginTop="-240dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:text="Certification By :"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/hallmark"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:textColor="#4A4A4A"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:text="916 FINENESS"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="-78dp"
+        android:background="@drawable/iso"
+        android:layout_gravity="end"/>
+
+
+
+</LinearLayout>
